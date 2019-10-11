@@ -8,7 +8,9 @@ import android.os.Build;
 import android.os.LocaleList;
 import android.text.TextUtils;
 import android.util.DisplayMetrics;
+
 import com.multilanguage.ConstantGlobal;
+
 import java.util.Locale;
 
 /**
@@ -18,6 +20,9 @@ import java.util.Locale;
 public class MultiLanguageUtil {
 
     public static Context attachBaseContext(Context context) {
+        Locale locale = new Locale("en", "US");
+        saveLanguageSetting(context, locale);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
             return createConfigurationResources(context);
         } else {

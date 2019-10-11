@@ -1,5 +1,6 @@
 <resources>
     <!--日语-->
+    <string name="app_name">MultiLanguage</string>
     <string name="message">日本の多言語</string>
     <string name="zh_cn">簡体字中国語</string>
     <string name="zh_tw">繁体字中国語</string>
